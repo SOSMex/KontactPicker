@@ -95,8 +95,14 @@ class MainActivity : AppCompatActivity() {
                 else -> SelectionMode.Multiple
             }
         }
-
-        KontactPicker().startPickerForResult(this, item, 3000)
+        KontactPicker().startPickerForResult(
+            this,
+            KontactPickerItem().apply {
+                selectionMode = SelectionMode.Custom(limit = 3)
+                imageMode = ImageMode.UserImageMode
+            },
+            3000
+        )
     }
 
     private fun openColorPicker() {
@@ -133,5 +139,4 @@ class MainActivity : AppCompatActivity() {
             contactsAdapter?.updateList(myContacts)
         }
     }
-
 }

@@ -50,5 +50,4 @@ class ContactAdapter(private var contactsList: ArrayList<Contact>?) :
                 .into(contactImage)
         }
     }
-
 }

@@ -175,7 +175,12 @@ class KontactPickerActivity : AppCompatActivity() {
     }
 
     private fun setSubtitle() {
-        supportActionBar?.subtitle = "${getSelectedKontacts().size} of ${myKontacts.size} Contacts"
+        supportActionBar?.subtitle =
+            getString(
+                R.string.selected_contacts_size,
+                getSelectedKontacts().size,
+                myKontacts.size
+            )
     }
 
     private fun filterContacts(text: String) {

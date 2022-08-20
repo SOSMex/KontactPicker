@@ -73,15 +73,10 @@ class KontactEx {
             val contact = it.value
 
             val isUriEnable = KontactPickerUI.getPickerItem().includePhotoUri
-            val isLargeUriEnable = KontactPickerUI.getPickerItem().getLargePhotoUri
             var photoUri: Uri? = null
             if (isUriEnable) {
-                photoUri = if (isLargeUriEnable)
-                    getContactImageLargeUri(contact.contactId?.toLong()!!)
-                else
-                    getContactImageUri(contact.contactId?.toLong()!!)
+                photoUri = getContactImageUri(contact.contactId?.toLong()!!)
             }
-
             contact.contactNumberList.forEach { number ->
                 if (!phoneList.contains(number)) {
                     val newContact = MyContacts(
@@ -100,5 +95,4 @@ class KontactEx {
         }
         return myKontacts
     }
-
 }

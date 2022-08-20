@@ -7,5 +7,5 @@ package com.deepakkumardk.kontactpickerlib.model
 sealed class SelectionMode {
     object Single : SelectionMode()
     object Multiple : SelectionMode()
-    data class Custom(val limit:Int) : SelectionMode()
+    data class Custom(val limit: Int) : SelectionMode()
 }
