@@ -72,7 +72,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openKontactPicker() {
-        val item = KontactPickerItem().apply {
+        KontactPickerItem().apply {
             debugMode = debugModeCheck.value ?: false
             //            textBgColor = ContextCompat.getColor(this@MainActivity, R.color.colorBlue100)
             colorDefault?.let { textBgColor = it }

@@ -163,7 +163,7 @@ class KontactPickerActivity : AppCompatActivity() {
         }
     }
 
-    private fun getLimitMessage(limit: Int) = KontactPickerUI.getPickerItem().limitMsg.format(limit)
+    private fun getLimitMessage(limit: Int) = getString(R.string.limit_contacts, limit)
 
     private fun getSelectedKontacts(): ArrayList<MyContacts> {
         val list = arrayListOf<MyContacts>()

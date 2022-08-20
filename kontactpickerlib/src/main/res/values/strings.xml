@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">KontactPicker</string>
     <string name="contact_image">Contact Image</string>
     <string name="search">Search</string>
     <string name="search_hint">Search…</string>
     <string name="selection_tick_view_large">SelectionTickViewLarge</string>
     <string name="selected_contacts_size">%1$d of %2$d</string>
+    <string name="limit_contacts">You can\'t select more than %1$d contacts</string>
 </resources>
