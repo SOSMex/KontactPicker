@@ -3,4 +3,5 @@
     <color name="cardBackground">#0d0d17</color>
     <color name="mainTextColor">@color/colorWhite</color>
     <color name="colorTextItemPhone">#B3E4E4E4</color>
+    <color name="colorBackground">@color/colorBlack</color>
 </resources>
