@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cardBackground">#0d0d17</color>
+    <color name="mainTextColor">@color/colorWhite</color>
+    <color name="colorTextItemPhone">#B3E4E4E4</color>
+</resources>

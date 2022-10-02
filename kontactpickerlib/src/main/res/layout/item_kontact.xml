@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorWhite"
     android:clickable="true"
-    android:focusable="true">
+    android:focusable="true"
+    app:cardBackgroundColor="@color/cardBackground">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             android:layout_toEndOf="@id/contact_image"
             android:layout_toRightOf="@id/contact_image"
             android:maxLines="1"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/mainTextColor"
             android:textSize="20sp"
             tools:text="Contact Name" />
 
@@ -73,6 +73,7 @@
             android:layout_toEndOf="@id/contact_image"
             android:layout_toRightOf="@id/contact_image"
             android:maxLines="1"
+            android:textColor="@color/colorTextItemPhone"
             android:textSize="16sp"
             tools:text="Contact Mobile" />
 
